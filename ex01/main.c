@@ -39,11 +39,10 @@ int main(int argc, char *argv[]) {
 		
 		} while (vel < 27.7);
 	}
-	printf("Otimo!");
+	printf("\nOtimo!\n");
 	circuito=dist_z+750+200+300+1500;
 	tempo=circuito/vel;
-	printf("\n");
-	printf("O carro, andando num circuito de %d metros a uma velocidade %.2f o terminara em %.1f segundos",circuito,vel,tempo);
+	printf("\nO carro, andando num circuito de %d metros a uma velocidade %.2f o terminara em %.1f segundos",circuito,vel,tempo);
 	
 	
 	
