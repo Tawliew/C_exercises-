@@ -14,10 +14,15 @@ int main(int argc, char *argv[]) {
 	printf("\n");
 	printf("Digite a distancia do trecho Z(em metros): ");
 	scanf("%d", &dist_z);
+	
 	if (dist_z > 750) {
-		printf("Valor digitado na distancia e maior que 750.");
-		printf("Fechando...");
-		return 0;
+		do
+		{
+			printf("\n\nDistancia digitada menor que 750m! \n\n");
+			printf("\n\nPor favor, digite um numero menor que 750: ");
+			scanf("%d", &dist_z);
+		
+		} while (dist_z > 750);
 	}
 	printf("\n");
 	printf("Ok!");
@@ -25,11 +30,14 @@ int main(int argc, char *argv[]) {
 	printf("Agora, digite a velocidade que o carro est� (em m/s): ");
 	scanf("%f", &vel);
 	printf("\n");
-	if( vel < 27.7) {
-		printf("Valor digitado na velocidade e menor que 27.7m/s.");
-		printf("\n");
-		printf("Fechando...");
-		return 0;
+	if(vel < 27.7) {
+		do
+		{
+			printf("\n\nVelocidade menor que 27.7 m/s! \n\n");
+			printf("\n\nPor favor, digite um numero maior que 27.7: ");
+			scanf("%f", &vel);
+		
+		} while (vel < 27.7);
 	}
 	printf("Otimo!");
 	circuito=dist_z+750+200+300+1500;
