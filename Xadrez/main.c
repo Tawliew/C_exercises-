@@ -117,7 +117,7 @@ void jogador1(){
 		}
 		
 		else {
-			/* ajustar */
+			/* ajustar isso */
 			printf("%3c",tabuleiro[t][i]);
 			printf("\n");
 		}
